@@ -15,7 +15,7 @@ function Hero2() {
         </div>
       </div>
 
-      <div className="two bg-gradient-to-r from-orange-100 to-pink-200 rounded-2xl p-3 shadow-md w-1/4 h-60">
+      <div className="two bg-gradient-to-r from-green-100 to-white rounded-2xl p-3 shadow-md w-1/4 h-60">
         <div className="title flex justify-center">
           <div className="text">iHealth</div>
         </div>

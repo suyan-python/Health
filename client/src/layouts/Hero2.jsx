@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function Hero2() {
   return (
@@ -18,16 +19,20 @@ function Hero2() {
         <div className="title flex justify-center">
           <div className="text">iHealth</div>
         </div>
-        <div className="images pt-16 text-center">Our Speciality doctors</div>
+        <div className="images pt-16 text-center text-xl font-medium">
+          Our Speciality doctors
+        </div>
       </div>
 
       <div className="three bg-gradient-to-r from-white to-blue-100 rounded-2xl p-3 shadow-md w-1/4 h-60">
-        <div className="title flex justify-between">
-          <div className="text">Latest Visited</div>
-          <div className="direct">Re-direct</div>
+        <div className="title flex-col ">
+          <div className="text font-semibold text-2xl">
+            Connect with our professional doctors
+          </div>
+          <div className="images pt-16">
+            <Button title="Connect now" />
+          </div>
         </div>
-        <div className="images pt-16">Doctors images</div>
-        <div className="text text-slate-500"></div>
       </div>
 
       <div className="four rounded-2xl p-3 shadow-md w-1/4 h-60">

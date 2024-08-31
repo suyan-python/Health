@@ -15,7 +15,9 @@ function Navbar() {
           <div className="item hover:text-green-500">
             <Link to={"/"}>Home</Link>
           </div>
-          <div className="item hover:text-green-500">About</div>
+          <div className="item hover:text-green-500">
+            <Link to={"/about"}>About</Link>
+          </div>
           <div className="item hover:text-green-500">
             <Link to={"/carecenter"}>Care Service</Link>
           </div>

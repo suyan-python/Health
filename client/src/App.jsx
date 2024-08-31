@@ -1,3 +1,4 @@
+import About from "./components/About";
 import CareCenter from "./components/CareCenter";
 import Landing from "./components/landing";
 import SignIp from "./components/log/SignIn";
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/signup" element={<SignIp />} />
+          <Route path="/about" element={<About />} />
           <Route path="/carecenter" element={<CareCenter />} />
         </Routes>
       </Router>

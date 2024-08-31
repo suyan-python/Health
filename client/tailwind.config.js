@@ -2,7 +2,24 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'darks': '#070707',
+        'rad1':'#80A4AC',
+        'side':'#DAE6E8',
+        'profile':'#A6D7DC',
+        'white':'#FFFFFF',
+      
+      },
+      size:
+      {
+        'small':'10px',
+      },
+      borderRadius: {
+        'extra-large': '2rem',  
+        'huge': '3rem',         
+      },
+    },
   },
   plugins: [],
 };

@@ -17,7 +17,7 @@ function Hero() {
             Center for you
           </div>
           <div className="description text-slate-400">
-            Connect with our professional doctors{" "}
+            Connect with our professional doctors
           </div>
           <div className="book py-3">
             <Button title="Book Appointment" />

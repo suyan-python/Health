@@ -1,10 +1,10 @@
 import React from "react";
+import Hero from "../layouts/Hero";
 
 function Landing() {
   return (
     <>
-      <div className="bg-red-300 text-red-500">This is Suyan Branch</div>
-      <p>where you can find wounderful landing page</p>
+      <Hero />
     </>
   );
 }

@@ -1,6 +1,7 @@
-import React from "react";
+import * as React from "react";
 import Logo from "../../assets/web-logo2.png";
 import Hospital from "../../assets/hospital.png";
+import calender from "../../assets/calender.png";
 import { PiCirclesThreePlus } from "react-icons/pi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { FaAmbulance } from "react-icons/fa";
@@ -14,8 +15,12 @@ import { FiLogOut } from "react-icons/fi";
 import Doc from "../../assets/doctorhd.png";
 import Button from "../../layouts/Button";
 import { FiBell } from "react-icons/fi";
+import { FaRegCalendarDays } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
+import { LuAlarmClock } from "react-icons/lu";
+import Chart from "./Chart";
+
 function Admindashboard() {
   return (
     <section className="maincontainer flex w-screen  h-screen p-3">
@@ -87,48 +92,109 @@ function Admindashboard() {
               <h1>Hi, Samantha W.</h1>
             </div>
             <div className="suggestion">
-                <p>Let's track your health daily</p>
+              <p>Let's track your health daily</p>
             </div>
           </div>
           <div className="iconsection flex items-center justify-evenly w-[15%] text-xl">
             <div className="search">
-             <IoSearch />
+              <IoSearch />
             </div>
             <div className="notification">
-            <FiBell />
+              <FiBell />
             </div>
             <div className="profile">
-            <CgProfile />
+              <CgProfile />
             </div>
           </div>
         </div>
-        <div className="appoinmentcard p-5 w-[60%] flex flex-col">
-            <div className="title text-xl font-medium w-full">
+        <div className="cardnoone flex">
+          <div className="appoinmentcard p-5 w-[60%] flex h-screen  flex-col">
+            <div className="app">
+              <div className="title text-xl font-medium w-full">
                 <h1>Upcoming Appoinment</h1>
+              </div>
+              <div className="appoinsec flex ">
+                <div className="hospitalphoto text-center w-[30%]">
+                  <div className="photo">
+                    <img
+                      src={Hospital}
+                      alt="hospitalphoto"
+                      className="w-48 h-28 object-cover"
+                    />
+                  </div>
+                  <div className="hospitalname">ABCD</div>
+                  <div className="hospitaladdress">Sitapaila,kathmandu</div>
+                </div>
+                <div className="doctorphoto flex justify-center w-full  items-center flex-col">
+                  <div className="cards flex justify-center">
+                    <div className="photo">
+                      <img src={Doc} alt="doctorsphoto" className="h-14 w-14" />
+                    </div>
+                    <div className="doctorname">
+                      <div className="name">Dr.Abhinash Khatri</div>
+                      <div className="position">Deratologist</div>
+                    </div>
+                    <div className="videocall">
+                      <Button title="video call" />
+                    </div>
+                  </div>
+                  <div className="calender  flex  items-center justify-evenly  bg-calender w-[70%] h-12 rounded-lg mt-5 ">
+                    <div className="calenderparts flex items-center justify-evenly w-1/2">
+                      <div className="calenderlogo">
+                        <FaRegCalendarDays />
+                      </div>
+                      <div className="calenderdate"> 11,2021</div>
+                    </div>
+                    <div className="timeparts flex items-center justify-evenly w-1/2 ">
+                      <div className="tilelogo">
+                        <LuAlarmClock />
+                      </div>
+                      <div className="time"> 12:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>{" "}
+            {/*appended here*/}
+            <br></br>
+            <hr />
+            <div className="cardsecton">
+              <div className="chart1">
+                <div className="title font-semibold text-xl mt-5">
+                  Patient Activities
+                </div>
+                <div className="todaydatehere">
+                  <p>today, 31 Aug 2024</p>
+                </div>
+              </div>
+              <div className="chart2 mt-10">
+                <Chart/>
+              </div>
             </div>
-           <div className="appoinsec flex ">
-           <div className="hospitalphoto text-center w-[30%]">
-             <div className="photo">
-                <img src={Hospital} alt="hospitalphoto"     className="w-48 h-28 object-cover" />
-             </div>
-             <div className="hospitalname">ABCD</div>
-             <div className="hospitaladdress">Sitapaila,kathmandu</div>
-            </div>
-            <div className="doctorphoto flex">
+          </div>
+          <div className="Listofappoinments  w-[40%] p-5 h-full">
+            <div className="apponelist">
+              {" "}
+              <div className="heading text-xl font-medium">
+                <h1>List Of Appoinment</h1>
+              </div>
+              <div className="calenderphoto">
                 <div className="photo">
-                    <img src={Doc} alt="doctorsphoto" className="h-14 w-14" />
+                  <img src={calender} alt="" className="h-4/5 w-4/5" />
                 </div>
-                <div className="doctorname">
-                    <div className="name">Dr.Abhinash Khatri</div>
-                    <div className="position">Deratologist</div>
-                </div>
-                <div className="videocall">
-                <Button title="video call" />
-                </div>
+              </div>
+            </div>
+            <div className="cardsband">
 
             </div>
-           </div>
+          </div>
         </div>
+        {/* <div className="cardtwo p-5 w-[60%]">
+         <hr />
+        <div className="chartcontainer">
+            <h1>This is the chartcontainer</h1>
+        </div>
+        </div> */}
       </div>
     </section>
   );

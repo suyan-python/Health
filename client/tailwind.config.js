@@ -9,6 +9,7 @@ export default {
         'side':'#DAE6E8',
         'profile':'#A6D7DC',
         'white':'#FFFFFF',
+        'calender':'#F4F6F7',
       
       },
       size:

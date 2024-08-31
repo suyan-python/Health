@@ -1,3 +1,4 @@
+import CareCenter from "./components/CareCenter";
 import Landing from "./components/landing";
 import SignIp from "./components/log/SignIn";
 import Navbar from "./components/Navbar";
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/signup" element={<SignIp />} />
+          <Route path="/carecenter" element={<CareCenter />} />
         </Routes>
       </Router>
     </>

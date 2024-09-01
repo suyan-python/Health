@@ -11,6 +11,7 @@ import { BiSolidDonateBlood } from "react-icons/bi";
 import { LuCross } from "react-icons/lu";
 import { FaVanShuttle } from "react-icons/fa6";
 import { FaHospital } from "react-icons/fa";
+import img from '../assets/contact.png';
 
 function CareCenter() {
   return <div className="flex">
@@ -93,8 +94,8 @@ function CareCenter() {
       </div>
     </div>
 
-    <div className="img-avatar w-1/3 h-4/5">
-
+    <div className="img-avatar w-1/3 h-2/3 py-60">
+    <img src={img}alt="" />
     </div>
 
     <div className="hospital-nums bg-gradient-to-r from-white to-blue-100 rounded-2xl p-3 shadow-md w-1/3 h-4/5 shadow-xl shadow-blue-200 m-5">

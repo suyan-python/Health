@@ -65,15 +65,15 @@ function Form({ props }) {
   return (
     <div className="box-signup flex-row text-center mt-10">
       <div className="text-area mb-2">Sign In</div>
-      <div className="form-area bg-green-400">
+      <div className="form-area bg-green-400 border-2">
         <form className="content-area" onSubmit={handleSubmit}>
-          <div className="email">
-            <input
+          <div className="email ">
+            <input className="border border-green-500 py-2 px-4 rounded-2xl"
               type="email"
               name="email"
               id="email"
               label="email"
-              placeholder="email"
+              placeholder="Your E-mail"
               required
               autoComplete="off"
               value={user.email}
@@ -82,12 +82,12 @@ function Form({ props }) {
           </div>
 
           <div className="password">
-            <input
+            <input className="border border-green-500 py-2 px-4 rounded-2xl"
               type="password"
               name="password"
               id="password"
               label="password"
-              placeholder="password"
+              placeholder="Password"
               required
               autoComplete="off"
               value={user.password}
@@ -95,13 +95,13 @@ function Form({ props }) {
             />
           </div>
           <div className="btn-sign">
-            <button type="submit" className="px-2 py-1 my-2 rounded-xl">
-              SIGN IN
+            <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-green-200 hover:text-blue-500 hover:scale-105">
+              Sign In
             </button>
           </div>
           <div className="bottom">
             <div className="already">Don't have an account?</div>
-            <div className="login">
+            <div className="login text-green-500 hover:text-blue-500 underline underline-offset-4">
               <Link to="/SignUp">Sign Up</Link>
             </div>
           </div>

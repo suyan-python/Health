@@ -2,16 +2,7 @@ import * as React from "react";
 import Logo from "../../assets/web-logo2.png";
 import Hospital from "../../assets/hospital.png";
 import calender from "../../assets/calender.png";
-import { PiCirclesThreePlus } from "react-icons/pi";
-import { MdOutlineCalendarMonth } from "react-icons/md";
-import { FaAmbulance } from "react-icons/fa";
-import { FaUsers } from "react-icons/fa";
-import { SiCashapp } from "react-icons/si";
-import { MdAttachEmail } from "react-icons/md";
-import { AiFillMessage } from "react-icons/ai";
-import { FaRegQuestionCircle } from "react-icons/fa";
-import { MdSettings } from "react-icons/md";
-import { FiLogOut } from "react-icons/fi";
+
 import Doc from "../../assets/doctorhd.png";
 import Button from "../../layouts/Button";
 import { FiBell } from "react-icons/fi";
@@ -20,47 +11,14 @@ import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 import { LuAlarmClock } from "react-icons/lu";
 import Chart from "./Chart";
+import Sidebar from "../../layouts/Sidebar";
 
 function Admindashboard() {
   return (
     <section className="maincontainer flex w-screen  h-screen p-3">
-      <div className="slider  bg-darks text-white h-80% rounded-tl-extra-large rounded-bl-extra-large pt-5 w-[5%]">
-        <div className="logo">
-          <img className="logoofdashboard" src={Logo} alt="" />
-        </div>
-        <div className="icons flex items-center justify-items-center flex-col gap-8  text-2xl mt-9">
-          <div className="firsticon">
-            <PiCirclesThreePlus />
-          </div>
-          <div className="secondicon">
-            <MdOutlineCalendarMonth />
-          </div>
-          <div className="thirdicon">
-            <FaUsers />
-          </div>
-          <div className="forthicon">
-            <FaAmbulance />
-          </div>
-          <div className="fifthicon">
-            <SiCashapp />
-          </div>
-          <div className="sixthicon">
-            <MdAttachEmail />
-          </div>
-          <div className="seventh">
-            <AiFillMessage />
-          </div>
-          <div className="setting mb-5">
-            <MdSettings />
-          </div>
-          <div className="question mt-14">
-            <FaRegQuestionCircle />
-          </div>
-          <div className="logot">
-            <FiLogOut />
-          </div>
-        </div>
-      </div>
+<div className="side w-[5%]">
+<Sidebar />
+</div>
       <div className="containersecond h-80% bg-side w-[20%]">
         <div className="topcontainer  w-full ">
           <div className="profilephoto bg-profile rounded-full w-24 h-24 flex items-center justify-center mt-8 ms-[80px]">

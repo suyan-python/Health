@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/dashboard" element={<Admindashboard />} />

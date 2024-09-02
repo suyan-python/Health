@@ -6,7 +6,7 @@ import Button from "../layouts/Button";
 function About() {
   return (
     <>
-      <div className="flex flex-col justify-center h-2/4 rounded-3xl shadow-sm bg-gradient-to-t from-green-100 to-blue-200 items-center text-center">
+      <div className="flex flex-col justify-center h-2/5 rounded-3xl shadow-sm bg-gradient-to-t from-green-100 to-blue-200 items-center text-center">
         <div className="text-area flex flex-col w-3/4 justify-center items-center pl-20 ">
           <div className="slog rounded-full flex w-1/5 justify-center px-3 py-2 ">
             <img src={Logo} alt="" />

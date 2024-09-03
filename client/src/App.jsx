@@ -1,5 +1,8 @@
 import About from "./components/About";
+<<<<<<< HEAD
 import Admindashboard from "./components/admindashboard/Admindashboard";
+=======
+>>>>>>> origin/main
 import CareCenter from "./components/CareCenter";
 import Landing from "./components/landing";
 // import SignIp from "./components/log/SignIn";
@@ -13,7 +16,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
+<<<<<<< HEAD
           <Route path="/dashboard" element={<Admindashboard />} />
+=======
+          <Route path="/signup" element={<SignIp />} />
+>>>>>>> origin/main
           <Route path="/about" element={<About />} />
           <Route path="/carecenter" element={<CareCenter />} />
         </Routes>

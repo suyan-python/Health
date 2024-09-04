@@ -3,6 +3,7 @@ import { useAuth } from "../store/auth";
 import { useState } from "react";
 import "./form.css";
 import Logo from "../../assets/web-logo2.png";
+import Doclogimg from "../../assets/doclogin.png";
 
 import { toast } from "react-toastify";
 
@@ -68,7 +69,8 @@ function Form({ props }) {
       <div className="form-area bg-green-400 border-2">
         <form className="content-area" onSubmit={handleSubmit}>
           <div className="email ">
-            <input className="border border-blue-500 py-1 px-4 rounded-2xl"
+            <input
+              className="border border-blue-500 py-1 px-4 rounded-2xl"
               type="email"
               name="email"
               id="email"
@@ -82,7 +84,8 @@ function Form({ props }) {
           </div>
 
           <div className="password">
-            <input className="border border-blue-500 py-1 px-4 rounded-2xl"
+            <input
+              className="border border-blue-500 py-1 px-4 rounded-2xl"
               type="password"
               name="password"
               id="password"
@@ -95,7 +98,10 @@ function Form({ props }) {
             />
           </div>
           <div className="btn-sign">
-            <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-blue-500 hover:scale-105 font-light">
+            <button
+              type="submit"
+              className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-blue-500 hover:scale-105 font-light"
+            >
               Sign In
             </button>
           </div>
@@ -109,18 +115,19 @@ function Form({ props }) {
           <div className="default-login font-medium text-blue-500 underline hover:text-green-500">
             <Link to="/signup">Not a Doctor?</Link>
           </div>
-
         </form>
         <div className="image-area">
-          <img className="Logo-Website h-36 w-36" src={Logo} alt="" />
-          <div className="title text-3xl py-4">Welcomes You!</div>
-          <div className="description text-base font-semibold">Let's Dive into the World</div>
+          <img className="Logo-Website h-36 w-24" src={Logo} alt="" />
+          <div className="title text-2xl py-4 h-20">Welcomes You!</div>
+          <div className="description text-sm font-semibold">
+            Let's Dive into the World
+          </div>
+          <div>
+            <img src={Doclogimg} alt="" />
+          </div>
         </div>
-
       </div>
     </div>
-
-    
   );
 }
 

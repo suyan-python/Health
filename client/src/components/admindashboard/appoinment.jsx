@@ -1,14 +1,14 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 
-function appoinment() {
+function Appointment() {
   return (
-    <section className="appoinment ">
+    <section className=" ">
       <div className="side w-[5%]">
-      <Sidebar/>
+        <Sidebar />
       </div>
     </section>
   );
 }
 
-export default appoinment;
+export default Appointment;

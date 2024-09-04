@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Logo from "../../assets/web-logo2.png";
 import { PiCirclesThreePlus } from "react-icons/pi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
@@ -17,7 +17,7 @@ import { FiBell } from "react-icons/fi";
 function Sidebar() {
   return (
     <div>
-            {/* <div className="topnavbar flex items-center top-0 z-20   me-5">
+      {/* <div className="topnavbar flex items-center top-0 z-20   me-5">
           <div className="namesection p-5 w-[90%]">
             <div className="name font-bold text-3xl">
               <h1>Hi, Samantha W.</h1>
@@ -38,18 +38,22 @@ function Sidebar() {
             </div>
           </div>
            </div> */}
-         <div className="slider  bg-darks text-white h-80% rounded-tl-extra-large rounded-bl-extra-large pt-5 ">
+      <div className="slider  bg-darks text-white h-80% rounded-tl-extra-large rounded-bl-extra-large pt-5 ">
         <div className="logo">
           <img className="logoofdashboard" src={Logo} alt="" />
         </div>
         <div className="icons flex items-center justify-items-center flex-col gap-8  text-2xl mt-9">
           <div className="firsticon">
-            <a href="">    <PiCirclesThreePlus /></a>
-        
+            <a href="dashboard">
+              {" "}
+              <PiCirclesThreePlus />
+            </a>
           </div>
           <div className="secondicon">
-            <a href="appoinment.jsx">        <MdOutlineCalendarMonth /></a>
-    
+            <a href="appointment">
+              {" "}
+              <MdOutlineCalendarMonth />
+            </a>
           </div>
           <div className="thirdicon">
             <FaUsers />
@@ -76,12 +80,9 @@ function Sidebar() {
             <FiLogOut />
           </div>
         </div>
-          </div>
-     
-     
+      </div>
     </div>
-
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

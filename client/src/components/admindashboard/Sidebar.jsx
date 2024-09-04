@@ -13,6 +13,8 @@ import { FiLogOut } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 import { FiBell } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+
 // import { FiBell } from "react-icons/fi";
 function Sidebar() {
   return (
@@ -48,7 +50,7 @@ function Sidebar() {
         
           </div>
           <div className="secondicon">
-            <a href="appoinment.jsx">        <MdOutlineCalendarMonth /></a>
+            <a href="appoinment">        <MdOutlineCalendarMonth /></a>
     
           </div>
           <div className="thirdicon">
@@ -73,7 +75,7 @@ function Sidebar() {
             <FaRegQuestionCircle />
           </div>
           <div className="logot">
-            <FiLogOut />
+           <Link to="/Admin-login"><FiLogOut /></Link> 
           </div>
         </div>
           </div>

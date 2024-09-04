@@ -101,7 +101,7 @@ function Form({ props }) {
           </div>
           <div className="btn-sign">
             <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-blue-500 hover:scale-105 font-light">
-              Sign In
+              <Link to="/dashboard">Sign In</Link>
             </button>
           </div>
           {/* <div className="bottom">

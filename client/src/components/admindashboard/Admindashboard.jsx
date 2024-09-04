@@ -69,7 +69,7 @@ function Admindashboard() {
                     </div>
                     <div className="doctorname">
                       <div className="name">Dr.Abhinash Khatri</div>
-                      <div className="position">Deratologist</div>
+                      <div className="position">Dermatologist</div>
                     </div>
                     <div className="videocall">
                       <Button title="video call" />

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { useState } from "react";
-import "./form.css";
+// import "./form.css";
 import Logo from "../../assets/web-logo2.png";
 
 import { toast } from "react-toastify";
@@ -66,9 +66,9 @@ function Form({ props }) {
 
   return (
     <div className="box-signup flex-row text-center mt-10">
-      <div className="text-area mb-2">Sign In</div>
       <div className="form-area bg-green-400 border-2">
         <form className="content-area" onSubmit={handleSubmit}>
+        <div className="text-areaa mb-2 text-3xl font-normal text-green-500">Hi Doctor!</div>
         <div className="email flex items-center px-4 border border-blue-500 py-1 px-4 mx-4 rounded-2xl w-56">
           <div><MdEmail /></div>
            <div><input className="px-4 w-44 border-none outline-none"

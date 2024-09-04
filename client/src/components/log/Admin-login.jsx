@@ -5,6 +5,8 @@ import "./form.css";
 import Logo from "../../assets/web-logo2.png";
 
 import { toast } from "react-toastify";
+import { MdEmail } from "react-icons/md"; 
+import { IoMdLock } from "react-icons/io";
 
 const URL = "http://localhost:5000/api/auth/login";
 
@@ -67,8 +69,9 @@ function Form({ props }) {
       <div className="text-area mb-2">Sign In</div>
       <div className="form-area bg-green-400 border-2">
         <form className="content-area" onSubmit={handleSubmit}>
-          <div className="email ">
-            <input className="border border-blue-500 py-1 px-4 rounded-2xl"
+        <div className="email flex items-center px-4 border border-blue-500 py-1 px-4 mx-4 rounded-2xl w-56">
+          <div><MdEmail /></div>
+           <div><input className="px-4 w-44 border-none outline-none"
               type="email"
               name="email"
               id="email"
@@ -78,11 +81,13 @@ function Form({ props }) {
               autoComplete="off"
               value={user.email}
               onChange={handleInput}
-            />
+            /></div>
           </div>
 
-          <div className="password">
-            <input className="border border-blue-500 py-1 px-4 rounded-2xl"
+          
+          <div className="password  flex items-center px-4 border border-blue-500 py-1 px-4 mx-4 rounded-2xl w-56">
+            <div><IoMdLock /></div>
+            <div><input className="px-4 w-44 border-none outline-none"
               type="password"
               name="password"
               id="password"
@@ -92,7 +97,7 @@ function Form({ props }) {
               autoComplete="off"
               value={user.password}
               onChange={handleInput}
-            />
+            /></div>
           </div>
           <div className="btn-sign">
             <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-blue-500 hover:scale-105 font-light">
@@ -107,12 +112,12 @@ function Form({ props }) {
           </div> */}
 
           <div className="default-login font-medium text-blue-500 underline hover:text-green-500">
-            <Link to="/signup">Not an Admin?</Link>
+            <Link to="/signin">{"<<Back"}</Link>
           </div>
 
         </form>
         <div className="image-area">
-          <img className="Logo-Website h-36 w-36" src={Logo} alt="" />
+          <img className="Logo-Website h-24 w-24" src={Logo} alt="" />
           <div className="title text-3xl py-4">Welcomes You!</div>
           <div className="description text-base font-semibold">Let's Dive into the World</div>
         </div>

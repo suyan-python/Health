@@ -3,7 +3,8 @@ import { useAuth } from "../store/auth";
 import { useState } from "react";
 import "./form.css";
 import Logo from "../../assets/web-logo2.png";
-
+import { MdEmail } from "react-icons/md"; 
+import { IoMdLock } from "react-icons/io";
 import { toast } from "react-toastify";
 
 const URL = "http://localhost:5000/api/auth/login";
@@ -65,10 +66,11 @@ function Form({ props }) {
   return (
     <div className="box-signup flex-row text-center mt-10">
       <div className="text-area mb-2">Sign In</div>
-      <div className="form-area bg-green-400 border-2">
+      <div className="form-area bg-green-400 border-2 w-96">
         <form className="content-area" onSubmit={handleSubmit}>
-          <div className="email ">
-            <input className="border border-green-500 py-1 px-4 rounded-2xl"
+          <div className="email flex items-center px-4 border border-green-500 py-1 px-4 mx-4 rounded-2xl w-56">
+          <div><MdEmail /></div>
+           <div><input className="px-4 w-44 border-none outline-none"
               type="email"
               name="email"
               id="email"
@@ -78,11 +80,12 @@ function Form({ props }) {
               autoComplete="off"
               value={user.email}
               onChange={handleInput}
-            />
+            /></div>
           </div>
 
-          <div className="password">
-            <input className="border border-green-500 py-1 px-4 rounded-2xl"
+          <div className="password  flex items-center px-4 border border-green-500 py-1 px-4 mx-4 rounded-2xl w-56">
+            <div><IoMdLock /></div>
+            <div><input className="px-4 w-44 border-none outline-none"
               type="password"
               name="password"
               id="password"
@@ -92,7 +95,7 @@ function Form({ props }) {
               autoComplete="off"
               value={user.password}
               onChange={handleInput}
-            />
+            /></div>
           </div>
           <div className="btn-sign">
             <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-green-200 hover:text-blue-500 hover:scale-105 font-light">
@@ -102,13 +105,13 @@ function Form({ props }) {
           <div className="bottom">
             <div className="already font-light">Don't have an account?</div>
             <div className="login text-green-500 hover:text-blue-500 underline underline-offset-4">
-              <Link to="/SignUp">Sign Up</Link>
+              <Link to="/Sign-up">Sign Up</Link>
             </div>
           </div>
 
           <div className="sign-in-profile flex space-x-4 px-12 pt-4">
           <div className="btn-sign">
-            <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-green-700 hover:scale-105 font-medium">
+            <button type="submit" className="px-3 py-1 my-2 rounded-xl bg-blue-300 hover:text-green-700 hover:scale-105 font-medium text-white">
              <Link to="/Doc-login"> Doctor</Link>
             </button>
           </div>
@@ -121,7 +124,7 @@ function Form({ props }) {
 
         </form>
         <div className="image-area">
-          <img className="Logo-Website h-36 w-36" src={Logo} alt="" />
+          <img className="Logo-Website h-24 w-24" src={Logo} alt="" />
           <div className="title text-3xl py-4">Welcomes You!</div>
           <div className="description text-base font-semibold">Let's Dive into the World</div>
         </div>

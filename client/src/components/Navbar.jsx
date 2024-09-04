@@ -23,7 +23,7 @@ function Navbar() {
           </div>
         </div>
         <div className="login">
-          <Link to={"/signup"}>
+          <Link to={"/signin"}>
             <Button title="Login" />
           </Link>
         </div>

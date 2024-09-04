@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../assets/web-logo2.png";
+import Logo from "../../assets/web-logo2.png";
 import { PiCirclesThreePlus } from "react-icons/pi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { FaAmbulance } from "react-icons/fa";
@@ -20,10 +20,12 @@ function Sidebar() {
         </div>
         <div className="icons flex items-center justify-items-center flex-col gap-8  text-2xl mt-9">
           <div className="firsticon">
-            <PiCirclesThreePlus />
+            <a href="">    <PiCirclesThreePlus /></a>
+        
           </div>
           <div className="secondicon">
-            <MdOutlineCalendarMonth />
+            <a href="appoinment.jsx">        <MdOutlineCalendarMonth /></a>
+    
           </div>
           <div className="thirdicon">
             <FaUsers />

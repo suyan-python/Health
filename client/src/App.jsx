@@ -1,8 +1,8 @@
 import About from "./components/About";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import Admindashboard from "./components/admindashboard/Admindashboard";
-=======
->>>>>>> origin/main
+// =======
+// >>>>>>> origin/main
 import CareCenter from "./components/CareCenter";
 import Landing from "./components/landing";
 // import SignIp from "./components/log/SignIn";
@@ -19,15 +19,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-<<<<<<< HEAD
+          {/* <<<<<<< HEAD */}
           <Route path="/dashboard" element={<Admindashboard />} />
-=======
+          {/* ======= */}
           <Route path="/signup" element={<SignIp />} />
->>>>>>> origin/main
+          {/* >>>>>>> origin/main */}
           <Route path="/about" element={<About />} />
           <Route path="/carecenter" element={<CareCenter />} />
-          <Route path="/Doc-login" element={<Doclogin/>}/>
-          <Route path="/Admin-login" element={<Adminlogin/>}/>
+          <Route path="/Doc-login" element={<Doclogin />} />
+          <Route path="/Admin-login" element={<Adminlogin />} />
         </Routes>
       </Router>
     </>

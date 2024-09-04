@@ -1,4 +1,8 @@
 import About from "./components/About";
+// <<<<<<< HEAD
+import Admindashboard from "./components/admindashboard/Admindashboard";
+// =======
+// >>>>>>> origin/main
 import CareCenter from "./components/CareCenter";
 import Landing from "./components/landing";
 import SignIn from "./components/log/SignIn";
@@ -13,15 +17,27 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+   
         <Routes>
           <Route path="/" element={<Landing />} />
+
           <Route path="/signin" element={<SignIn />} />
           <Route path="/about" element={<About />} />
           <Route path="/carecenter" element={<CareCenter />} />
           <Route path="/Doc-login" element={<Doclogin/>}/>
           <Route path="/Admin-login" element={<Adminlogin/>}/>
           <Route path="/Sign-up" element={<Signup/>}/>
+
+  
+          <Route path="/dashboard" element={<Admindashboard />} />
+
+          <Route path="/signup" element={<SignIp />} />
+    
+          <Route path="/about" element={<About />} />
+          <Route path="/carecenter" element={<CareCenter />} />
+          <Route path="/Doc-login" element={<Doclogin />} />
+          <Route path="/Admin-login" element={<Adminlogin />} />
+
         </Routes>
       </Router>
     </>

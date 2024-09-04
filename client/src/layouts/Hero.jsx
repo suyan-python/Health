@@ -20,7 +20,7 @@ function Hero() {
             Connect with our professional doctors
           </div>
           <div className="book py-3">
-            <Button title="Book Appointment" />
+            <Button title="Book Appointment ↗" />
           </div>
         </div>
         <div className="image-area flex-col w-3/4 text-center">

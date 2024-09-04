@@ -16,7 +16,7 @@ function Admindashboard() {
   return (
     <section className="maincontainer flex w-screen  h-screen p-3">
 <div className="side w-[5%]">
-<Sidebar />
+{/* <Sidebar /> */}
 </div>
       <div className="containersecond h-80% bg-side w-[20%]">
         <div className="topcontainer  w-full ">

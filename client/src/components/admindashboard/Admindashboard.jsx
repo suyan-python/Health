@@ -5,13 +5,12 @@ import calender from "../../assets/calender.png";
 
 import Doc from "../../assets/doctorhd.png";
 import Button from "../../layouts/Button";
-import { FiBell } from "react-icons/fi";
+
 import { FaRegCalendarDays } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
-import { IoSearch } from "react-icons/io5";
+
 import { LuAlarmClock } from "react-icons/lu";
 import Chart from "./Chart";
-import Sidebar from "../../layouts/Sidebar";
+import Sidebar from "./Sidebar";
 
 function Admindashboard() {
   return (
@@ -44,27 +43,7 @@ function Admindashboard() {
         </div>
       </div>
       <div className="containerthird h-80% w-full bg-white">
-        <div className="topnavbar flex items-center  me-5">
-          <div className="namesection p-5 w-[90%]">
-            <div className="name font-bold text-3xl">
-              <h1>Hi, Samantha W.</h1>
-            </div>
-            <div className="suggestion">
-              <p>Let's track your health daily</p>
-            </div>
-          </div>
-          <div className="iconsection flex items-center justify-evenly w-[15%] text-xl">
-            <div className="search">
-              <IoSearch />
-            </div>
-            <div className="notification">
-              <FiBell />
-            </div>
-            <div className="profile">
-              <CgProfile />
-            </div>
-          </div>
-        </div>
+       
         <div className="cardnoone flex">
           <div className="appoinmentcard p-5 w-[60%] flex h-screen  flex-col">
             <div className="app">

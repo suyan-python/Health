@@ -15,7 +15,7 @@ function Admindashboard() {
   return (
     <section className="flex">
       {/* Sidebar */}
-      <aside className="sidebar bg-green-900 w-64 h-screen fixed top-0 left-0 flex flex-col">
+      <aside className="sidebar w-64 h-screen fixed top-0 left-0 flex flex-col">
         <Sidebar />
       </aside>
 

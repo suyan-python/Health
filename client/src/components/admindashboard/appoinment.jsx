@@ -1,14 +1,11 @@
-import React from "react";
-import Sidebar from "./Sidebar";
+import React from 'react'
 
 function appoinment() {
   return (
-    <section className="appoinment ">
-      <div className="side w-[5%]">
-      <Sidebar/>
-      </div>
-    </section>
-  );
+    <div>
+      <Slider/>
+    </div>
+  )
 }
 
-export default appoinment;
+export default appoinment

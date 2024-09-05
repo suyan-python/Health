@@ -19,8 +19,18 @@ function App() {
           <Route path="/dashboard" element={<Admindashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/carecenter" element={<CareCenter />} />
-          <Route path="/Doc-login" element={<Doclogin/>}/>
-          <Route path="/Admin-login" element={<Adminlogin/>}/>
+          <Route path="/Doc-login" element={<Doclogin />} />
+          <Route path="/Admin-login" element={<Adminlogin />} />
+   
+          {/* <Route path="/appointment" element={<Appointment />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/ambulance" element={<Ambulance />} />
+          <Route path="/cashapp" element={<CashApp />} />
+          <Route path="/email" element={<Email />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/logout" element={<Logout />} /> */}
         </Routes>
       </Router>
     </>

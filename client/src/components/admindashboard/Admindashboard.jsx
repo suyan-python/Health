@@ -125,13 +125,13 @@ function Admindashboard() {
 =======
     <section className="flex">
       {/* Sidebar */}
-      <aside className="sidebar w-64 h-screen fixed top-0 left-0 flex flex-col">
+      <aside className="sidebar w-20 fixed top-0 left-0 flex flex-col">
         <Sidebar />
       </aside>
 >>>>>>> 0218faea73b45846adcc1ffd0b955a0f67ba110e
 
       {/* Main Content */}
-      <main className="flex ml-64 p-4 bg-gray-100">
+      <main className="flex ml-24 mt-14 p-4   w-full">
         <div className="flex-1 h-full flex-col">
           <div className="flex items-center mb-8">
             <div className="profilephoto bg-profile rounded-full w-24 h-24 flex items-center justify-center">

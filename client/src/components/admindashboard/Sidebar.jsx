@@ -14,8 +14,8 @@ import { CgProfile } from "react-icons/cg";
 
 function Sidebar() {
   return (
-    <div className="top-0 bg-red-500">
-      <nav className="flex w-screen justify-between p-5 bg-gray-800 text-white">
+    <div className="top-0">
+      <nav className="flex w-screen justify-between p-5  bg-gray-800 text-white">
         <div className="logo">Icon here</div>
         <div className="icons w-[9rem] flex justify-between">
           <div className="search">
@@ -30,11 +30,11 @@ function Sidebar() {
         </div>
       </nav>
 
-      <div className="slider bg-darks text-white h-85% w-[6rem]">
+      <div className="slider bg-darks text-white h-screen w-[6rem]">
         <div className="logo h-[80px] w-[80px] ms-3">
           <img className="logoofdashboard" src={Logo} alt="Logo" />
         </div>
-        <div className="icons flex items-center justify-items-center flex-col gap-8 text-lg mt-9">
+        <div className="icons flex items-center justify-items-center flex-col gap-8 h-95% text-lg mt-9">
           {/* <Link to="/dashboard" className="flex items-center">
             <PiCirclesThreePlus />
           </Link> */}

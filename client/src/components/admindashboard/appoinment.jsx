@@ -1,11 +1,10 @@
 import React from "react";
-import Sidebar from "./Sidebar";
 
-function appoinment() {
+function Appointment() {
   return (
     <section className="appoinment ">
       <div className="side w-[5%]">
-      <Sidebar/>
+        <Sidebar />
       </div>
     </section>
   );

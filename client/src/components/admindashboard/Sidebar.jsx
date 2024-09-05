@@ -14,7 +14,7 @@ import { CgProfile } from "react-icons/cg";
 function Sidebar() {
   return (
     <div>
-            {/* <div className="topnavbar flex items-center top-0 z-20   me-5">
+            <div className="topnavbar flex items-center top-0 z-20   me-5">
           <div className="namesection p-5 w-[90%]">
             <div className="name font-bold text-3xl">
               <h1>Hi, Samantha W.</h1>
@@ -34,7 +34,7 @@ function Sidebar() {
               <CgProfile />
             </div>
           </div>
-           </div> */}
+           </div>
          <div className="slider  bg-darks text-white h-80% rounded-tl-extra-large rounded-bl-extra-large pt-5 ">
         <div className="logo">
           <img className="logoofdashboard" src={Logo} alt="" />
@@ -45,12 +45,13 @@ function Sidebar() {
         
           </div>
           <div className="secondicon">
-            <a href="appoinment.jsx">        <MdOutlineCalendarMonth /></a>
-    
+            <a href="appoinment">     <MdOutlineCalendarMonth />   </a>
           </div>
+
           <div className="thirdicon">
             <FaUsers />
-          </Link>
+          {/* </Link> */}
+
           <Link to="/ambulance" className="flex items-center">
             <FaAmbulance />
           </Link>

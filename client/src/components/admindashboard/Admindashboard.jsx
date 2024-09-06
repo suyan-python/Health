@@ -13,7 +13,7 @@ import Sidebar from "./Sidebar";
 
 function Admindashboard() {
   return (
-<<<<<<< HEAD
+// <<<<<<< HEAD
     <section className="maincontainer flex w-screen  h-screen p-3">
 <div className="side w-[5%]">
 <Sidebar />
@@ -122,13 +122,13 @@ function Admindashboard() {
               </div>
             </div>
             <div className="cardsband">
-=======
+{/* ======= */}
     <section className="flex">
       {/* Sidebar */}
       <aside className="sidebar bg-green-900 w-64 h-screen fixed top-0 left-0 flex flex-col">
         <Sidebar />
       </aside>
->>>>>>> 0218faea73b45846adcc1ffd0b955a0f67ba110e
+{/* >>>>>>> 0218faea73b45846adcc1ffd0b955a0f67ba110e */}
 
       {/* Main Content */}
       <main className="flex ml-64 p-4 bg-gray-100">
